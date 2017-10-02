@@ -13,4 +13,14 @@
 	width: 100%;
 	height: auto;
 }
+
+#arrow {
+	color: black;
+	font-size: 48px;
+	margin-top: 8%;
+}
+
+#arrow-icon {
+	margin-top: 10%;
+}
        

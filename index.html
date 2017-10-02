@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
 	<!-- GOOGLE FONTS -->
-	<link href="https://fonts.googleapis.com/css?family=Lobster|Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Material+Icons|Lobster|Roboto" rel="stylesheet">
 
 	<!-- FONT AWESOME -->
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -33,11 +33,20 @@
 
     <div class="parallax" id="skyline"><img src="assets/img/nyc_sky.jpg"></div>
     <div class="parallax"><img src="assets/img/pattern.png"></div>
-    <div id="intro-logo"><img class="responsive-img" src="assets/img/intro_logo.png"></div>
+    <div id="intro-logo">
+    	<li>
+    		<ul>
+    			<img class="responsive-img" src="assets/img/intro_logo.png">
+    		</ul>
+    		<ul>
+    			<a href="#main-content" id="arrow-icon" class="btn-floating btn-large white pulse"><i class="material-icons" id="arrow">details</i></a>
+    		</ul>
+    	<li>
+    </div>
 
   </div>
 
-  <div class="section white">
+  <div class="section white scrollspy" id="main-content">
     <div class="row container">
       <h2 class="header">Parallax</h2>
       <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
@@ -62,6 +71,7 @@
 
   	$(document).ready(function(){
       $('.parallax').parallax();
+      $('.scrollspy').scrollSpy();
     });
 
   </script>
