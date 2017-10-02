@@ -29,5 +29,39 @@
 
 <body>
 
+	<div class="parallax-container valign-wrapper center-align">
+
+    <div class="parallax" id="skyline"><img src="assets/img/nyc_sky.jpg"></div>
+    <div class="parallax"><img src="assets/img/pattern.png"></div>
+    <div class="responsive-img" id="intro-logo"><img src="assets/img/intro_logo.png"></div>
+
+  </div>
+
+  <div class="section white">
+    <div class="row container">
+      <h2 class="header">Parallax</h2>
+      <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+    </div>
+  </div>
+
+
+
+	<!-- JQUERY CDN -->
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+	
+	<!-- MATERIALIZE JS CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+  <script type="text/javascript">
+
+  	$(document).ready(function(){
+      $('.parallax').parallax();
+    });
+
+  </script>
+
 </body>
 </html>
