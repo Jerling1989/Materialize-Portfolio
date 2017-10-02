@@ -8,12 +8,9 @@
   height: 100%;
 }
 
-#skyline {
-	width: 100%;
-}
-
-#intro-logo {
+#intro-logo {	
 	position: relative;
 	width: 100%;
+	height: auto;
 }
        
