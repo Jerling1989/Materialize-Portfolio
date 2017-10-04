@@ -29,8 +29,8 @@
 
 <body>
 
+	<!-- PARALLAX HEADER -->
 	<div class="parallax-container valign-wrapper center-align">
-
     <div class="parallax" id="skyline"><img src="assets/img/nyc_sky.jpg"></div>
     <div class="parallax"><img src="assets/img/pattern.png"></div>
     <div id="intro-logo">
@@ -39,20 +39,45 @@
     			<img class="responsive-img" src="assets/img/intro_logo.png">
     		</ul>
     		<ul>
-    			<a href="#main-content" id="arrow-icon" class="btn-floating btn-large white pulse"><i class="material-icons" id="arrow">details</i></a>
+    			<a href="#top-nav" id="arrow-icon" class="btn-floating btn-large white pulse"><i class="material-icons" id="arrow">details</i></a>
     		</ul>
     	<li>
     </div>
-
   </div>
+  <!-- END PARALLAX HEADER -->
+	
+	<!-- NAVIGATION -->
+  <nav class="red" role="navigation">
+    <div class="nav-wrapper container scrollspy" id="top-nav">
+      <a href="#!" id="logo-container" class="brand-logo">Jacob Erling</a>
+      <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Projects</a></li>
+      </ul>
 
-  <div class="section white scrollspy" id="main-content">
+			<ul id="mobile-nav" class="side-nav">
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Projects</a></li>
+      </ul>
+
+    </div>
+  </nav>
+  <!-- END NAVIGATION -->
+
+        
+	<!-- MAIN-PAGE CONTENT -->
+  <div class="section white" id="main-content">
+
+
     <div class="row container">
       <h2 class="header">Parallax</h2>
       <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
-      <div><img class="responsive-img" src="assets/img/intro_logo.png"></div>
     </div>
   </div>
+  <!-- END MAIN-PAGE CONTENT -->
 
 
 
@@ -72,6 +97,7 @@
   	$(document).ready(function(){
       $('.parallax').parallax();
       $('.scrollspy').scrollSpy();
+      $(".button-collapse").sideNav();
     });
 
   </script>
