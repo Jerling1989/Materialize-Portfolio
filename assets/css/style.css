@@ -8,6 +8,12 @@ p {
 	margin-top: 5%;
 }
 
+h2 {
+	border: solid;
+	width: 30%;
+	margin: auto;
+}
+
 .parallax-container {
 	position: relative;
   width: 100%;
@@ -41,4 +47,13 @@ p {
 	margin-top: 5%;
 	margin-bottom: 5%;
 }
+
+.skill-name {
+	font-weight: bold;
+}
+
+.skill-percent {
+	color: white;
+}
+
        
