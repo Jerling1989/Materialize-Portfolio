@@ -9,6 +9,7 @@ p {
 }
 
 h2 {
+	font-size: 5vh;
 	border: solid;
 	width: 30%;
 	margin: auto;
@@ -49,11 +50,20 @@ h2 {
 }
 
 .skill-name {
+	font-size: 3vh;
 	font-weight: bold;
 }
 
 .skill-percent {
+	font-size: 3vh;
 	color: white;
+}
+
+#contact-div {
+	background-image: url(../img/contact-bg6.png);
+	padding-bottom: 2.5%;
+	/*margin-left: -12px;
+	margin-right: -12px;*/
 }
 
        
