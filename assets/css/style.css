@@ -60,10 +60,10 @@ h2 {
 }
 
 #contact-div {
-	background-image: url(../img/contact-bg6.png);
+	background-image: url(../img/contact-bg2.png);
+	background-repeat:no-repeat;
+	background-size:100%;
 	padding-bottom: 2.5%;
-	/*margin-left: -12px;
-	margin-right: -12px;*/
 }
 
        
