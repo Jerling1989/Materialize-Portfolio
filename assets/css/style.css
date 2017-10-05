@@ -64,6 +64,11 @@ h2 {
 	background-repeat:no-repeat;
 	background-size:100%;
 	padding-bottom: 2.5%;
+	margin-bottom: -2%;
+}
+
+#footer-style {
+	margin-top: -1%;
 }
 
        
