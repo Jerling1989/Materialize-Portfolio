@@ -46,9 +46,8 @@
   </div>
   <!-- END PARALLAX HEADER -->
 	
-	<div class="scrollspy" id="main-body">
 	<!-- NAVIGATION -->
-  <nav class="red z-depth-4" id="navbar-pushpin" role="navigation">
+  <nav class="red z-depth-4" id="main-nav" role="navigation">
     <div class="nav-wrapper container scrollspy" id="top-nav">
       <a href="#!" id="logo-container" class="brand-logo">Jacob Erling</a>
       <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -327,21 +326,8 @@
 	<!-- MATERIALIZE JS CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
-  <script type="text/javascript">
-
-  	$(document).ready(function(){
-      $('.parallax').parallax();
-      $('#navbar-pushpin').pushpin({
-      top: $('#navbar-pushpin').offset().top 
-    	});
-      $('.scrollspy').scrollSpy({
-      	scrollOffset:0
-      });
-      $(".button-collapse").sideNav();
-      $('.slider').slider();
-    });
-
-  </script>
+	<!-- CUSTOM JQUERY & JS -->
+  <script src="assets/js/init.js"></script>
 
 </body>
 </html>
