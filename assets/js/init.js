@@ -1,14 +1,21 @@
 $(document).ready(function(){
+	// PARALLAX HEADER
   $('.parallax').parallax();
+  // SCROLLSPY
   $('.scrollspy').scrollSpy({
   	scrollOffset:0
   });
+  // SIDE NAVIGATION
   $(".button-collapse").sideNav();
+  // PROJECT SLIDER
   $('.slider').slider();
+  // STICKY NAVIGATION
   $('#main-nav').pushpin({
       top: $('#main-nav').offset().top 
-    });
-    $('.scrollspy').scrollSpy({
-      scrollOffset: 0
-    });
+  });
+  // PICTURE CAROUSEL
+  $('.carousel').carousel({
+  	dist: -25
+  });
+
 });
