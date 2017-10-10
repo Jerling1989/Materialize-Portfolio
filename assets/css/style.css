@@ -40,6 +40,11 @@ h2 {
 #main-nav {
 	height: 65px;
 	margin-bottom: -65px;
+	z-index: 10;
+}
+
+#mobile-nav {
+	z-index: 1000;
 }
 
 #intro {
@@ -76,6 +81,11 @@ h2 {
 	margin-top: -1%;
 }
 
+.new-section {
+
+}
+
+.slider {}
 
 
 
