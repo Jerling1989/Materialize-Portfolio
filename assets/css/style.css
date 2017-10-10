@@ -9,10 +9,9 @@ p {
 }
 
 h2 {
+	font-family: 'Permanent Marker', cursive;
 	font-size: 5vh;
-	border: solid;
-	width: 30%;
-	margin: auto;
+	text-decoration: underline;
 }
 
 .parallax-container {
@@ -23,6 +22,11 @@ h2 {
 
 #intro-logo {	
 	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+#profile-img {
 	width: 100%;
 	height: auto;
 }
@@ -40,15 +44,15 @@ h2 {
 #main-nav {
 	height: 65px;
 	margin-bottom: -65px;
-	z-index: 10;
+	z-index: 100;
 }
 
-#mobile-nav {
-	z-index: 1000;
+.brand-logo {
+	font-family: 'Bangers', cursive;
 }
 
 #intro {
-	padding-top: 130px;
+	
 }
 
 .intro-list {
@@ -82,10 +86,9 @@ h2 {
 }
 
 .new-section {
-
+	padding-top: 130px;
 }
 
-.slider {}
 
 
 

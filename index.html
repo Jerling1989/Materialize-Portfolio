@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
 	<!-- GOOGLE FONTS -->
-	<link href="https://fonts.googleapis.com/css?family=Material+Icons|Lobster|Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Material+Icons|Bangers|Permanent+Marker" rel="stylesheet">
 
 	<!-- FONT AWESOME -->
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -52,17 +52,17 @@
       <a href="#!" id="logo-container" class="brand-logo">Jacob Erling</a>
       <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">INTRO</a></li>
-        <li><a href="#">SKILLS</a></li>
-        <li><a href="#">PROJECTS</a></li>
-        <li><a href="#">CONTACT</a></li>
+        <li><a href="#intro">INTRO</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
       </ul>
 
 			<ul id="mobile-nav" class="side-nav">
-        <li><a href="#">INTRO</a></li>
-        <li><a href="#">SKILLS</a></li>
-        <li><a href="#">PROJECTS</a></li>
-        <li><a href="#">CONTACT</a></li>
+        <li><a href="#intro">INTRO</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
       </ul>
 
     </div>
@@ -75,44 +75,47 @@
   <div class="section white" id="main-content">
 
 		<!-- INTRO SECTION -->
-  	<div class="row container new-section" id="intro">
+  	<div class="row container scrollspy new-section" id="intro">
 
   		<div class="row center-align">
-  			<h2 class="z-depth-3">ABOUT ME</h2>
+  			<h2>ABOUT ME</h2>
   		</div>
   		<br>
 
   		<div class="row">
-      <div class="col l3">
-      	<img class="responsive-img" src="assets/img/jacoberling.jpg">
-      </div>
+	      <div class="col l6">
+	      	<img id="profile-img" src="assets/img/jacoberling.jpg">
+	      </div>
 
-      <div class="col l4">
-      	<ul class="personal-details">
-	      	<li class="intro-list">Name: Jacob Erling</li>
-          <li class="intro-list">Profession: Marketer</li>
-          <li class="intro-list">Date of Birth: December 2nd, 1989</li>
-          <li class="intro-list">Address: Hoboken, New Jersey </li>
-          <li class="intro-list">Phone: (862) 222-2892</li>
-          <li class="intro-list">Email: jerling1989@gmail.com</li>
-	      </ul>
-      </div>
+	      <div class="col l6">
+	      	<ul class="personal-details">
+		      	<li class="intro-list">Name: Jacob Erling</li>
+	          <li class="intro-list">Profession: Marketer</li>
+	          <li class="intro-list">Date of Birth: December 2nd, 1989</li>
+	          <li class="intro-list">Address: Hoboken, New Jersey </li>
+	          <li class="intro-list">Phone: (862) 222-2892</li>
+	          <li class="intro-list">Email: jerling1989@gmail.com</li>
+		      </ul>
+	      </div>
+	    </div>
 
-      <div class="col l5">
+      <div class="row">
+      	<h4>Professional Profile</h4>
+
       	<p>Full Stack Web Developer with a passion for technology and a love of coding. Dedicated to adapting and learning new languages and frameworks with disciplines in HTML5, CSS3, JavaScript, jQuery, Node, SQL, and MongoDB.</p>
 				
 				<p>A natural knack for Front-End design with an artistic approach and an eye for detail. Familiar with Front-End framworks like Bootstrap, Materialize, React, Angular, and more.</p>
       </div>
-      </div>
+			
 		</div>
 		<!-- END INTRO SECTION -->
 		<br>
 		<br>
 		<br>
 		<!-- SKILL SECTIONS -->
-		<div class="row container new-section" id="Skills">
+		<div class="row container scrollspy new-section" id="skills">
 			<div class="row center-align">
-  			<h2 class="z-depth-3">SKILLS</h2>
+  			<h2>MY SKILLS</h2>
   		</div>
   		<br>
 
@@ -177,9 +180,9 @@
 		<br>
 		<br>
 		<!-- RECENT PROJECTS SECTION -->
-		<div class="row container new-section" id="recent-projects">
+		<div class="row container scrollspy new-section" id="projects">
 			<div class="row center-align">
-  			<h2 class="z-depth-3">PROJECTS</h2>
+  			<h2>RECENT PROJECTS</h2>
   		</div>
   		<br>
 
@@ -223,9 +226,9 @@
 		<br>
 		<br>
 		<!-- CONTACT SECTION -->
-		<div class="row new-section" id="contact">
+		<div class="row scrollspy new-section" id="contact">
 			<div class="row center-align">
-  			<h2 class="z-depth-3">CONTACT</h2>
+  			<h2>CONTACT ME</h2>
   		</div>
   		<br>
 
