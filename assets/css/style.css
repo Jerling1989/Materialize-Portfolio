@@ -10,7 +10,7 @@ p {
 
 h2 {
 	font-family: 'Permanent Marker', cursive;
-	font-size: 5vh;
+	font-size: 6vh;
 	text-decoration: underline;
 }
 
@@ -69,9 +69,14 @@ h2 {
 	background-attachment: fixed;
 }
 
-.skill-name {
-	font-size: 3vh;
-	font-weight: bold;
+#skills-title {
+	color: white;
+}
+
+.skills-img {
+	width: 80%;
+	height: auto;
+	margin-bottom: 50px;
 }
 
 .skill-percent {
@@ -79,7 +84,7 @@ h2 {
 	color: white;
 }
 
-#contact {
+#contact-div {
 	background-image: url(../img/contact-bg2.png);
 	background-repeat:no-repeat;
 	background-size:100%;
