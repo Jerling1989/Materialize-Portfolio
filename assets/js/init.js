@@ -3,7 +3,7 @@ $(document).ready(function(){
   $('.parallax').parallax();
   // SCROLLSPY
   $('.scrollspy').scrollSpy({
-  	scrollOffset:0
+  	scrollOffset: 80
   });
   // SIDE NAVIGATION
   $(".button-collapse").sideNav();

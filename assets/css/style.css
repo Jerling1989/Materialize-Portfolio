@@ -63,6 +63,12 @@ h2 {
 	margin-bottom: 5%;
 }
 
+#skills {
+	background-image: url(../img/shattered-island.png);
+	/*height: 500px;*/
+	background-attachment: fixed;
+}
+
 .skill-name {
 	font-size: 3vh;
 	font-weight: bold;
@@ -73,10 +79,12 @@ h2 {
 	color: white;
 }
 
-#contact-div {
+#contact {
 	background-image: url(../img/contact-bg2.png);
 	background-repeat:no-repeat;
 	background-size:100%;
+	/*background-attachment: fixed;*/
+	/*background-position: top;*/
 	padding-bottom: 2.5%;
 	margin-bottom: -2%;
 }
@@ -86,7 +94,9 @@ h2 {
 }
 
 .new-section {
-	padding-top: 100px;
+	margin-top: 130px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 
