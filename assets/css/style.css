@@ -3,9 +3,9 @@
  }
 
 p {
-	font-size: 18px;
-	font-weight: bold;
-	margin-top: 5%;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 24px;
+	line-height: 30px;
 }
 
 h2 {
@@ -65,7 +65,6 @@ h2 {
 
 #skills {
 	background-image: url(../img/shattered-island.png);
-	/*height: 500px;*/
 	background-attachment: fixed;
 }
 
