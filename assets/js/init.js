@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
 	// PARALLAX HEADER
   $('.parallax').parallax();
   // SCROLLSPY
@@ -11,7 +12,7 @@ $(document).ready(function(){
   $('.slider').slider();
   // STICKY NAVIGATION
   $('#main-nav').pushpin({
-      top: $('#main-nav').offset().top 
+    top: $('#main-nav').offset().top 
   });
   // PICTURE CAROUSEL
   $('.carousel').carousel({
