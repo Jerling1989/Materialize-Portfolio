@@ -91,12 +91,10 @@ h6 {
 	color: white;
 }
 
-#contact-div {
-	background-image: url(../img/contact-bg2.png);
+#contact {
+	background-image: url(../img/contact-bg.png);
 	background-repeat:no-repeat;
 	background-size:100%;
-	/*background-attachment: fixed;*/
-	/*background-position: top;*/
 	padding-bottom: 2.5%;
 	margin-bottom: -2%;
 }
@@ -118,5 +116,14 @@ h6 {
 	margin-bottom: 3%;
 }
 
+.card-content {
+	border-top-style: solid;
+	border-top-color: #f44336;
+	border-top-width: 5px;
+}
+
+.card-div {
+	margin-top: 5%;
+}
 
        
