@@ -259,13 +259,13 @@
   		<br>
 
   		<div class="row" id="contact-div">
-		    <form class="col s12">
+		    <form class="col s12" id="contact-form" name="contact-form" method="post" action="assets/php/send.php">
 
 		      <div class="row">
 		      	<!-- {/* NAME FIELD */} -->
 		        <div class="input-field col s6">
-		          <input id="last_name" type="text" class="validate" />
-		          <label class="sans-narrow" for="last_name">Name (required)</label>
+		          <input id="name" type="text" class="validate" />
+		          <label class="sans-narrow" for="name">Name (required)</label>
 		        </div>
 		        <!-- {/* END NAME FIELD */} -->
 
@@ -296,8 +296,8 @@
 		      <div class="row">
 		      	<!-- {/* MESSAGE FIELD */} -->
 		        <div class="input-field col s12">
-		          <textarea id="textarea1" class="materialize-textarea"></textarea>
-		          <label class="sans-narrow" for="textarea1">Message (required)</label>
+		          <textarea id="message" class="materialize-textarea"></textarea>
+		          <label class="sans-narrow" for="message">Message (required)</label>
 		        </div>
 		        <!-- {/* END MESSAGE FIELD */} -->
 		      </div>
