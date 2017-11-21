@@ -1,51 +1,74 @@
 <?php
 
-if(!empty($_POST['first_name']) and !empty($_POST['email']) and !empty($_POST['message'])) {
+/////////// Add your own email below //////////////// 
 
-$email_to = "jerling1989@gmail.com";
+	define("WEBMASTER_EMAIL", 'jerling1989@gmail.com');
+	
+	error_reporting (E_ALL ^ E_NOTICE);
 
-$email_subject = "Customer Message";
+//////////////////////////////////////////////////////
 
-$sender = $_POST['name']; // required
+	function ValidateEmail($email)
+	{
+		$regex = '/([a-z0-9_.-]+)'. # name
+		'@'. # at
+		'([a-z0-9.-]+){2,255}'. # domain & possibly subdomains
+		'.'. # period
+		'([a-z]+){2,10}/i'; # domain extension 
+		
+		if($email == '') 
+			return false;
+		else
+			$eregi = preg_replace($regex, '', $email);
+		return empty($eregi) ? true : false;
+	}
 
-$email_from = $_POST['email']; // required
+//////////////////////////////////////////////////////
 
-$sender_phone = $_POST['phone'];
-
-$sender_company = $_POST['company'];
-
-$comments = $_POST['message']; // required
-
-$email_message = "Form Details:\n\n";
-
-
-
-function clean_string($string) {
-
-  $bad = array("content-type","bcc:","to:","cc:","href");
-
-  return str_replace($bad,"",$string);
-
-}
-
-
-
-$email_message .= "Name: ".clean_string($sender)."\n";
-
-$email_message .= "Email: ".clean_string($email_from)."\n";
-
-$email_message .= "Phone: ".clean_string($sender_phone)."\n";
-
-$email_message .= "Company: ".clean_string($sender_company)."\n";
-
-$email_message .= "Message: ".clean_string($comments)."\n";
-
-$headers = 'From: '.$email_from."\r\n".
-
-'Reply-To: '.$email_from."\r\n" .
-
-'X-Mailer: PHP/' . phpversion();
-
-
+	$post = (!empty($_POST)) ? true : false;
+	
+	if($post)
+	{
+		$name 	 = stripslashes($_POST['name']);
+		$email 	 = trim($_POST['email']);
+		$company = trim($_POST['company']);
+		$phone = trim($_POST['phone']);
+		$message = stripslashes($_POST['message']);
+	
+		$error = '';
+	
+		// Check name
+		if(!$name)
+			$error .= 'Name required! ';
+	
+		// Check email
+		if(!$email)
+			$error .= 'E-mail required! ';
+	
+		if($email && !ValidateEmail($email))
+			$error .= 'E-mail address is not valid! ';
+	
+		// Check message
+		if(!$message)
+			$error .= "Please enter your message!";
+	
+		if(!$error)
+		{
+			$mail = @mail(WEBMASTER_EMAIL, $message,
+				 "From: ".$name." <".$email.">\r\n"
+				."Reply-To: ".$email."\r\n"
+				."Return-Path: " .$email. "\r\n"
+				."MIME-Version: 1.0\r\n"	
+				."Content-type: text/html; charset=UTF-8\r\n");
+			
+			if($mail){
+				echo 'OK';
+			}else{
+				echo 'Could not send email!';
+			}
+		}
+		else
+			echo $error;
+	}
 
 ?>
