@@ -31,7 +31,7 @@
 	{
 		$name 	 = stripslashes($_POST['name']);
 		$email 	 = trim($_POST['email']);
-		$company = trim($_POST['company']);
+		$company = stripslashes($_POST['company']);
 		$phone = trim($_POST['phone']);
 		$message = stripslashes($_POST['message']);
 	
@@ -61,7 +61,7 @@
 				."MIME-Version: 1.0\r\n"	
 				."Content-type: text/html; charset=UTF-8\r\n");
 			
-			if($mail){
+			if(!$mail){
 				echo 'OK';
 			}else{
 				echo 'Could not send email!';
