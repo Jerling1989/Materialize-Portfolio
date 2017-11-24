@@ -64,7 +64,7 @@
 			if(!$mail){
 				echo 'OK';
 			}else{
-				echo 'Could not send email!';
+				echo 'Could not send email! Contact at jerling1989@gmail.com, Thanks';
 			}
 		}
 		else
