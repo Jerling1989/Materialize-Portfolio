@@ -262,7 +262,7 @@
   		<br>
 
   		<div class="row" id="contact-div">
-		    <form class="col s12" action="assets/php/send.php" method="POST">
+		    <form class="col s12" id="contact-form" action="assets/php/send.php" method="POST">
 
 		      <div class="row">
 		      	<!-- {/* NAME FIELD */} -->
@@ -478,6 +478,23 @@
 
 	<!-- CUSTOM JQUERY & JS -->
   <script src="assets/js/init.js"></script>
+
+  <script>
+  $(document).ready(function() {
+      $('#contact-form').submit(function() {
+
+          $.ajax({
+              url: 'script.php',
+              method: 'post,'
+              /* TODO: add data */
+          }).done(function(response) {
+              alert(response);
+          });
+
+          return false;
+      });
+  });
+  </script>
 
 </body>
 </html>

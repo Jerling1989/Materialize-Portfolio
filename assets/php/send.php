@@ -1,74 +1,12 @@
-<?php
-
-/////////// Add your own email below //////////////// 
-
-	define("WEBMASTER_EMAIL", 'jerling1989@gmail.com');
-	
-	error_reporting (E_ALL ^ E_NOTICE);
-
-//////////////////////////////////////////////////////
-
-	function ValidateEmail($email)
-	{
-		$regex = '/([a-z0-9_.-]+)'. # name
-		'@'. # at
-		'([a-z0-9.-]+){2,255}'. # domain & possibly subdomains
-		'.'. # period
-		'([a-z]+){2,10}/i'; # domain extension 
-		
-		if($email == '') 
-			return false;
-		else
-			$eregi = preg_replace($regex, '', $email);
-		return empty($eregi) ? true : false;
-	}
-
-//////////////////////////////////////////////////////
-
-	$post = (!empty($_POST)) ? true : false;
-	
-	if($post)
-	{
-		$name 	 = stripslashes($_POST['name']);
-		$email 	 = trim($_POST['email']);
-		$company = stripslashes($_POST['company']);
-		$phone = trim($_POST['phone']);
-		$message = stripslashes($_POST['message']);
-	
-		$error = '';
-	
-		// Check name
-		if(!$name)
-			$error .= 'Name required! ';
-	
-		// Check email
-		if(!$email)
-			$error .= 'E-mail required! ';
-	
-		if($email && !ValidateEmail($email))
-			$error .= 'E-mail address is not valid! ';
-	
-		// Check message
-		if(!$message)
-			$error .= "Please enter your message!";
-	
-		if(!$error)
-		{
-			$mail = @mail(WEBMASTER_EMAIL, $message,
-				 "From: ".$name." <".$email.">\r\n"
-				."Reply-To: ".$email."\r\n"
-				."Return-Path: " .$email. "\r\n"
-				."MIME-Version: 1.0\r\n"	
-				."Content-type: text/html; charset=UTF-8\r\n");
-			
-			if(!$mail){
-				echo 'OK';
-			}else{
-				echo 'Could not send email! Contact at jerling1989@gmail.com, Thanks';
-			}
-		}
-		else
-			echo $error;
-	}
-
+<?php 
+$name = $_POST['name'];
+$email = $_POST['email'];
+$company = $_POST['company'];
+$phone = $_POST['phone'];
+$message = $_POST['message'];
+$formcontent = "From: $name \n Phone: $phone \n Company: $company \n Message: $message";
+$recipient = "jerling1989@gmail.com";
+$subject = "Website Contact Form";
+$mailheader = "From: $email \r\n";
+mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
 ?>
