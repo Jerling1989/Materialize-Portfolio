@@ -299,7 +299,7 @@
 		      <div class="row">
 		      	<!-- {/* MESSAGE FIELD */} -->
 		        <div class="input-field col s12">
-		          <textarea id="message" name="message" class="materialize-textarea"></textarea>
+		          <textarea id="message" name="message" class="materialize-textarea validate"></textarea>
 		          <label class="sans-narrow" for="message">Message (required)</label>
 		        </div>
 		        <!-- {/* END MESSAGE FIELD */} -->
@@ -476,25 +476,11 @@
 	<!-- MATERIALIZE JS CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
-	<!-- CUSTOM JQUERY & JS -->
+	<!-- STYLING JQUERY & JS -->
   <script src="assets/js/init.js"></script>
 
-  <script>
-  $(document).ready(function() {
-      $('#contact-form').submit(function() {
-
-          $.ajax({
-              url: 'script.php',
-              method: 'post,'
-              /* TODO: add data */
-          }).done(function(response) {
-              alert(response);
-          });
-
-          return false;
-      });
-  });
-  </script>
+  <!-- CONTACT FORM JS & AJAX -->
+  <script src="assets/js/form.js"></script>
 
 </body>
 </html>
