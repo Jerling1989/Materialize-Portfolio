@@ -1,3 +1,4 @@
+ /* GENERAL PAGE STYLES */
  html, body {
  	height: 100%;
  }
@@ -21,6 +22,14 @@ h6 {
 	font-family: 'PT Sans Narrow', sans-serif;
 }
 
+.new-section {
+	margin-top: 100px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+
+/* PAGE HEADER */
 .parallax-container {
 	position: relative;
   width: 100%;
@@ -29,11 +38,6 @@ h6 {
 
 #intro-logo {	
 	position: relative;
-	width: 100%;
-	height: auto;
-}
-
-#profile-img {
 	width: 100%;
 	height: auto;
 }
@@ -48,6 +52,8 @@ h6 {
 	margin-top: 10%;
 }
 
+
+/* NAVIGATION */
 #main-nav {
 	height: 65px;
 	margin-bottom: -65px;
@@ -62,18 +68,8 @@ nav ul a.active {
 	font-family: 'Bangers', cursive;
 }
 
-#about {
-	
-}
 
-.intro-list {
-	font-size: 18px;
-	font-weight: bold;
-	border-bottom: solid;
-	margin-top: 5%;
-	margin-bottom: 5%;
-}
-
+/* SKILLS SECTION */
 #skills {
 	background-image: url(../img/shattered-island.png);
 	background-attachment: fixed;
@@ -89,29 +85,8 @@ nav ul a.active {
 	margin-bottom: 50px;
 }
 
-.skill-percent {
-	font-size: 3vh;
-	color: white;
-}
 
-#contact {
-	background-image: url(../img/contact-bg.png);
-	background-repeat:no-repeat;
-	background-size:100%;
-	padding-bottom: 2.5%;
-	margin-bottom: -2%;
-}
-
-#footer-style {
-	margin-top: -1%;
-}
-
-.new-section {
-	margin-top: 100px;
-	padding-top: 15px;
-	padding-bottom: 15px;
-}
-
+/* PROJECT SECTION */
 .project-card {
 	width: 95%;
 	height: auto;
@@ -129,4 +104,17 @@ nav ul a.active {
 	margin-top: 5%;
 }
 
+
+/* CONTACT SECTION */
+#contact {
+	background-image: url(../img/contact-bg.png);
+	background-repeat:no-repeat;
+	background-size:100%;
+	padding-bottom: 2.5%;
+	margin-bottom: -2%;
+}
+
+#footer-style {
+	margin-top: -1%;
+}
 

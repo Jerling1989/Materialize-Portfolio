@@ -16,9 +16,6 @@ $(document).ready(function(){
     draggable: true
   });
 
-  // PROJECT SLIDER
-  $('.slider').slider();
-
   // STICKY NAVIGATION
   $('#main-nav').pushpin({
     top: $('#main-nav').offset().top 
