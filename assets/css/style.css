@@ -118,3 +118,18 @@ nav ul a.active {
 	margin-top: -1%;
 }
 
+
+/* CONTACT FORM */
+#success {
+	font-family: Arial;
+	font-size: 18px;
+	font-weight: bolder;
+	color: green;
+}
+
+#error {
+	font-family: Arial;
+	font-size: 18px;
+	font-weight: bolder;
+	color: red;
+}

@@ -311,21 +311,23 @@
   		</div>
   		<br>
 
+      <!-- SUCCESS MESSAGE -->
+      <div id="form-messages"></div>
+
   		<div class="row" id="contact-div">
-		    <!-- <form class="col s12" id="contact-form" action="assets/php/send.php" method="POST"> -->
-        <!-- TEMPORARILY DISABLED FORM TO STOP BOT EMAILS -->
+		    <form class="col s12" id="ajax-contact" action="assets/php/send.php" method="post">
 
 		      <div class="row">
 		      	<!-- NAME FIELD -->
 		        <div class="input-field col s6">
-		          <input id="name" name="name" type="text" class="validate" />
+		          <input id="name" name="name" type="text" class="validate" required />
 		          <label class="sans-narrow" for="name">Name (required)</label>
 		        </div>
 		        <!-- END NAME FIELD -->
 
 		        <!-- EMAIL FIELD -->
 		        <div class="input-field col s6">
-		          <input id="email" name="email" type="email" class="validate" />
+		          <input id="email" name="email" type="email" class="validate" required />
 		          <label class="sans-narrow" for="email">Email (required)</label>
 		        </div>
 		        <!-- END EMAIL FIELD -->
@@ -350,7 +352,7 @@
 		      <div class="row">
 		      	<!-- MESSAGE FIELD -->
 		        <div class="input-field col s12">
-		          <textarea id="message" name="message" class="materialize-textarea validate"></textarea>
+		          <textarea id="message" name="message" class="materialize-textarea validate" required></textarea>
 		          <label class="sans-narrow" for="message">Message (required)</label>
 		        </div>
 		        <!-- END MESSAGE FIELD -->
@@ -358,7 +360,7 @@
 					
 					<!-- SUBMIT BUTTON -->
 				  <button class="btn waves-effect waves-light sans-narrow" type="submit" 
-				  value="submit" name="action" onclick="Materialize.toast('Message Sent!', 4000)">SEND
+				  value="submit">SEND
 				    <i class="material-icons right">send</i>
 				  </button>
 					<!-- END SUBMIT BUTTON -->
