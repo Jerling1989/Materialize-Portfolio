@@ -120,14 +120,14 @@ nav ul a.active {
 
 
 /* CONTACT FORM */
-#success {
+.success {
 	font-family: Arial;
 	font-size: 18px;
 	font-weight: bolder;
 	color: green;
 }
 
-#error {
+.error {
 	font-family: Arial;
 	font-size: 18px;
 	font-weight: bolder;
