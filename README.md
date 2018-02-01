@@ -1,5 +1,7 @@
 # Materialize-Portfolio
-This is my main portfolio site at the moment. It was made with HTML, CSS, jQuery, PHP, and the Materialize CDN.
+This is my main portfolio website that I designed to display information about me, my skills, and some of my projects. I designed it with HTML, CSS, Materialize, jQuery, PHP, and AJAX. I gave it a modern slick design while also trying to add some character that hints to my personality.
+
+---
 
 - The first thing the user will notice is the header I created with the New York City skyline in the background and a logo of my name I made with Gimp Photo Editor.
 ![Header](assets/img/readme/header.png)
