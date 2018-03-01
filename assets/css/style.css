@@ -144,3 +144,12 @@ nav ul a.active {
      -moz-border-radius: 4px;
           border-radius: 4px;
 }
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+	#skills {
+	background-image: url(../img/shattered-island.png);
+	background-attachment: fixed;
+	background-repeat: repeat-y;
+}
+}
