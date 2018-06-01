@@ -22,6 +22,11 @@ h6 {
 	font-family: 'PT Sans Narrow', sans-serif;
 }
 
+#intro-info {
+	font-size: 28px;
+	line-height: 34px;
+}
+
 .new-section {
 	margin-top: 100px;
 	padding-top: 15px;
